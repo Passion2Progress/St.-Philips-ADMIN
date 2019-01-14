@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>St. Philips</title>
+<!-- Meta Tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+
+<!-- CSS from scratch -->
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
+<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Merriweather" rel="stylesheet">
+
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+
+</head>
+<!-- Navigation Start -->
+<body>
+	<header id="top-bot-border">
+		<div class="container" >
+			<div id="branding">
+				<img src="./logo/stlogo.png" width="320" height="40" id="logo-main">
+			</div>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="current dropdown-toggle"><a href="#">About</a></li>
+						<li class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+							<a class="dropdown-item" href="about.html">INFO</a>
+							<a class="dropdown-item" href="testimonies.html">FROM THE RECTOR</a>
+    						<a class="dropdown-item" href="events.html">EVENTS</a>
+    						<a class="dropdown-item" href="rentals.html">RENTALS</a>
+    						<a class="dropdown-item" href="pastoralcare.html">PASTORAL CARE</a>
+  						</li>
+					<li><a href="history.html">History</a></li>
+					<li><a href="giving.html">Giving</a></li>
+					<li><a href="ministries.html">Ministries</a></li>
+					<li><a href="celebration.html">Celebration</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+<!-- Navigation End -->
+
+<!-- About Start -->
+<div id="services-1">
+	<div id="garden-img">
+		<div class="container">
+			<section id="services">
+				<ul>
+					<li><a style="cursor: pointer;" onclick="services()"><span class="active-service">GARDEN</a></li>
+					<li><a style="cursor: pointer;" onclick="music()">UNDERCROFT</span></a></li>
+				</ul>
+			</section>
+		</div>
+	</div>
+<!-- Services -->
+<section>
+	<div class="container">
+		<h2 class="mission-header mission-header-green garden-head rental-place">St. Philip’s Courtyard Garden</h2>
+		<p class="mission-top-sub about-sub">			
+		The St. Philip’s courtyard garden is a peaceful oasis from the bustling sights and
+		sounds of the city. Amidst trees and flowers, birds and squirrels the garden
+		provides a additional variety of sanctuary to contemplate God’s loving nature and
+		presence in the quiet stillness. The garden is a resource for all the community
+		and access is granted weekdays during parish office hours as well as before,
+		during and after Sunday worship services. You can schedule a special program
+		or event in the garden by contacting the Parish Administrator.
+		<br>
+		<br>
+		Fees vary according to use. Please contact our Parish Administrator, 212-862-4940.
+		</p>
+		<br>
+		<br>
+		<img src="./pics/garden.jpg" class="pic-border" style="margin: auto; display: block;">
+		<div style="text-align: center;">
+		    <a href="agreement/Space License.pdf" download><button id="rentals-button" type="button" class="btn btn-primary btn-lg actual-button-large" style="margin-right: 4%;">Space License</button></a>
+		    <button onclick="seemore()" id="rentals-button" type="button" class="btn btn-primary btn-lg actual-button-large" style="margin-right: 4%;">Member License</button>
+  		</div>
+	</div>
+</section>
+</div>
+</div>
+
+<div id="myModal" class="modal">
+					  <!-- Modal content -->
+					  <div class="modal-content">
+					    <span onclick="close1()" class="close">&times;</span>
+					    <p>If you are interested in this space, please e-mail us at stphilipschurch.org or call our Parish Administrator, 212-862-4940.</p>
+					  </div>
+					</div>
+<!-- Services End -->
+
+<!-- About End -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Music -->
+
+<!-- About Start -->
+<div id="music-1" style="display: none;">
+	<div id="undercroft-img">
+		<div class="container">
+			<section id="services">
+				<ul>
+					<li><a style="cursor: pointer;" onclick="services()">GARDEN</a></li>
+					<li><a style="cursor: pointer;" onclick="music()"><span class="active-service">UNDERCROFT</span></a></li>
+				</ul>
+			</section>
+		</div>
+	</div>
+<!-- Services -->
+<section>
+	<div class="container">
+		<h2 class="mission-header mission-header-green garden-head rental-place">St. Philip’s Undercroft
+			</h2>
+		<p class="mission-top-sub about-sub">			
+		Offers a full kitchen for keeping food warm as well as male and female restrooms.
+		A discrete number of table and chairs are included in the rental license.
+		<br>
+		<br>
+		Fees vary according to use. Please contact our Parish Administrator, 212-862-4940.
+		</p>
+		<div style="text-align: center;">
+		    <a href="agreement/Space License.pdf" download><button id="rentals-button" type="button" class="btn btn-primary btn-lg actual-button-large" style="margin-right: 4%;">Space License</button></a>
+		    <button onclick="seemore()" id="rentals-button" type="button" class="btn btn-primary btn-lg actual-button-large" style="margin-right: 4%;">Member License</button>
+  		</div>
+	</div>
+</section>
+</div>
+</div>
+
+<!-- Music end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- About Start -->
+<div id="gar-1" style="display: none;">
+	<div id="directions-img">
+		<div class="container">
+			<section id="services">
+				<ul>
+					<li><a style="cursor: pointer;" onclick="services()">SERVICES</a></li>
+					<li><a style="cursor: pointer;" onclick="music()">MUSIC</span></a></li>
+					<li><a style="cursor: pointer;" onclick="staff()">STAFF</a></li>
+					<li><a style="cursor: pointer;" onclick="wte()">WHAT TO EXPECT</a></li>
+					<li><a style="cursor: pointer;" onclick="gar()" class="active-service">GARDEN</a></li>
+				</ul>
+			</section>
+		</div>
+	</div>
+<!-- About End -->
+
+<!-- What to Expect -->
+<section>
+	<div class="container">
+		<h2 class="mission-header mission-header-green garden-head rental-place">St. Philip’s Courtyard Garden
+			</h2>
+		<p class="mission-top-sub about-sub">			
+		The St. Philip’s courtyard garden is a peaceful oasis from the bustling sights and
+		sounds of the city. Amidst trees and flowers, birds and squirrels the garden
+		provides a additional variety of sanctuary to contemplate God’s loving nature and
+		presence in the quiet stillness. The garden is a resource for all the community
+		and access is granted weekdays during parish office hours as well as before,
+		during and after Sunday worship services. You can schedule a special program
+		or event in the garden by contacting theParish Administrator.
+		</p>
+		<div style="text-align: center;">
+		    <a href="agreement/Space License.pdf" download><button id="rentals-button" type="button" class="btn btn-primary btn-lg actual-button-large" style="margin-right: 4%;">Space License</button></a>
+		    <a href="agreement/Space License.pdf" download><button id="rentals-button" type="button" class="btn btn-primary btn-lg actual-button-large">Member License</button></a>
+  		</div>
+	</div>
+</section>
+</div>
+<!-- What to Expect End -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- Footer -->
+
+<div id="new-footer">
+	<div class="container">
+	  <div class="row">
+	    <div class="col">
+	      <section id="footer-new-head">
+			    <i>KEEP IN TOUCH WITH ST. PHILIP'S</i>
+		  </section>
+
+		  <section id="footer-new-head">
+			    <section id="new-contact-line">
+		    		<p>St. Philip's Church
+						<br>
+						The Episcopal Diocese of New York
+						<br>
+						204 West 134 Street - between Adam Clayton 
+						<br> and Frederick Douglass Boulevards
+						New York, NY 10030
+						<br>
+						Parish Office 212-862-4940
+						<br>
+						<br>
+						The Rev. Canon Terence Alexander Lee, Rector  646-856-6464
+						<br>
+						Gail Silver, Parish Administrator                            917-280-2974
+						<br>
+						Lisa Forte-Mason, Sr. Warden                               917-280-2494
+						<br>
+					</p>
+				</section>
+		  </section>
+	    </div>
+	      <div class="col">
+	    	<section id="new-map">
+	    		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12078.409997143459!2d-73.944882!3d40.814728!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd80e863dda97e1!2sSt+Philip&#39;s+Church!5e0!3m2!1sen!2sus!4v1527041300640" width="300" height="300" frameborder="0" allowfullscreen></iframe>
+	    	</section>
+	      </div>
+	  </div>
+	</div>
+
+	<div class="container">
+	  <div class="row">
+	    <div class="col-sm">
+	      
+	    </div>
+	  </div>
+	</div>
+</div>
+	
+	
+
+<a href="#vision"><img class="down" src="arrow.png" style="right: 5%;"></a>
+
+<!-- Footer End -->
+<!-- <a href="#mission"><p class="mission">MISSION</p>
+<a href="#vision"><p class="vision">VISION</p> -->
+
+	<footer>
+		<p>2018 &copy; St. Philip's Church. All rights reserved.</p>
+	</footer>			
+
+<script type="text/javascript">
+	function services() {
+		document.getElementById("services-1").style.display = "block";
+		document.getElementById("music-1").style.display = "none";
+		document.getElementById("staff-1").style.display = "none";
+		document.getElementById("wte-1").style.display = "none";
+		document.getElementById("gar-1").style.display = "none";
+	}
+
+
+	function music() {
+		document.getElementById("services-1").style.display = "none";
+		document.getElementById("music-1").style.display = "block";
+		document.getElementById("staff-1").style.display = "none";
+		document.getElementById("wte-1").style.display = "none";
+		document.getElementById("gar-1").style.display = "none";
+	}
+
+	function staff() {
+		document.getElementById("services-1").style.display = "none";
+		document.getElementById("music-1").style.display = "none";
+		document.getElementById("staff-1").style.display = "block";
+		document.getElementById("wte-1").style.display = "none";
+		document.getElementById("gar-1").style.display = "none";
+	}
+
+	function wte() {
+		document.getElementById("services-1").style.display = "none";
+		document.getElementById("music-1").style.display = "none";
+		document.getElementById("staff-1").style.display = "none";
+		document.getElementById("wte-1").style.display = "block";
+		document.getElementById("gar-1").style.display = "none";
+	}
+
+		function gar() {
+		document.getElementById("services-1").style.display = "none";
+		document.getElementById("music-1").style.display = "none";
+		document.getElementById("staff-1").style.display = "none";
+		document.getElementById("wte-1").style.display = "none";
+		document.getElementById("gar-1").style.display = "block";
+	}
+
+
+
+
+
+// When the user clicks on the button, open the modal 
+var info = document.getElementById('myModal');
+
+var info2 = document.getElementById('myModal2');
+
+var info3 = document.getElementById('myModal3');
+
+var info4 = document.getElementById('myModal4');
+
+var info5 = document.getElementById('myModal5');
+
+var info6 = document.getElementById('myModal6');
+
+
+
+// When the user clicks on the button, open the modal 
+// btn.onclick = function() {
+//     if (event.target == btn) {
+//         modal.style.display = "block";
+//     }
+//     if (event.target == btn1) {
+//         modal1.style.display = "block";
+//     }
+// }
+
+function desc() {
+	info.style.display = "block";
+}
+
+function desc2() {
+	info2.style.display = "block";
+}
+
+function desc3() {
+	info3.style.display = "block";
+}
+
+function desc4() {
+	info4.style.display = "block";
+}
+
+function desc5() {
+	info5.style.display = "block";
+}
+
+function desc6() {
+	info6.style.display = "block";
+}
+
+
+
+
+// When the user clicks on <span> (x), close the modal
+function close1() {
+        info.style.display = "none";
+    }
+
+function close2() {
+        info2.style.display = "none";
+    }
+
+function close3() {
+        info3.style.display = "none";
+    }
+
+function close4() {
+        info4.style.display = "none";
+    }
+
+function close5() {
+        info5.style.display = "none";
+    }
+
+function close6() {
+        info6.style.display = "none";
+    }
+
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == info) {
+        info.style.display = "none";
+    }
+    if (event.target == info2) {
+        info2.style.display = "none";
+    }
+    if (event.target == info3) {
+        info3.style.display = "none";
+    }
+    if (event.target == info4) {
+        info4.style.display = "none";
+    }
+    if (event.target == info5) {
+        info5.style.display = "none";
+    }
+    if (event.target == info6) {
+        info6.style.display = "none";
+    }
+}
+
+var modal = document.getElementById('myModal');
+
+function seemore() {
+	modal.style.display = "block";
+}
+
+function close1() {
+        modal.style.display = "none";
+    }
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+</script>
+
+</body>
+</html>
