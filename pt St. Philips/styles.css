@@ -2265,6 +2265,13 @@ footer p {
 		min-height: 600px;
 	}
 
+	.video {
+    	width: 80%;
+    	height: 100%;
+    	padding-top: 1.6%;
+    	padding-bottom: 1.6%;
+    }
+
 }
 
 @media (min-width: 1110px) {
@@ -2272,6 +2279,13 @@ footer p {
 	#caro-img {
 		min-height: 550px;
 	}
+
+	.video {
+    	width: 80%;
+    	height: 100%;
+    	padding-top: 1.6%;
+    	padding-bottom: 1.6%;
+    }
 
 }
 
@@ -2330,6 +2344,13 @@ footer p {
     padding-left: 180px;
     font-size: 200%;
     display: inline-block;
+    }
+
+    .video {
+    	width: 80%;
+    	height: 100%;
+    	padding-top: 1.6%;
+    	padding-bottom: 1.6%;
     }
     
     #logo-main {
@@ -2430,6 +2451,13 @@ footer p {
     display: inline-block;
     }
     
+    .video {
+    	width: 80%;
+    	height: 100%;
+    	padding-top: 1.6%;
+    	padding-bottom: 1.6%;
+    }
+
     .mission-header-green {
     width: inherit;
     }
